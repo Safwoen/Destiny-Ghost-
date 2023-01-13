@@ -43,7 +43,7 @@ public class CharacterController : MonoBehaviour
         }
 
         
-        Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") * maxSpeed);
+        Vector3 newVelocity = (transform.forward * Input.GetAxis("Horizontal") * maxSpeed) + (transform.right * Input.GetAxis("Vertical") * maxSpeed);
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
 
         //myAnim.SetFloat("speed", newVelocity.magnitude);
