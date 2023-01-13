@@ -43,7 +43,7 @@ public class CharacterController : MonoBehaviour
         }
 
         
-        Vector3 newVelocity = (transform.forward * Input.GetAxis("Horizontal") * maxSpeed) + (transform.right * Input.GetAxis("Vertical") * maxSpeed);
+        Vector3 newVelocity = (transform.forward * Input.GetAxis("Vertical") * maxSpeed) + (transform.right * Input.GetAxis("Horizontal") * maxSpeed);
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
 
         //myAnim.SetFloat("speed", newVelocity.magnitude);
@@ -52,9 +52,9 @@ public class CharacterController : MonoBehaviour
         rotation = rotation + Input.GetAxis("Mouse X");
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
 
-        //camRotation = camRotation - Input.GetAxis("Mouse Y");
-        //cam.transform.localRotation = Quaternion.Euler(new Vector3(camRotation, 0.0f, 0.0f));
+        camRotation = camRotation - Input.GetAxis("Mouse Y");
+        cam.transform.localRotation = Quaternion.Euler(new Vector3(camRotation, 0.0f, 0.0f));
 
-        //camRotation = Mathf.Clamp(camRotation, -40.0f, 40.0f);
+        camRotation = Mathf.Clamp(camRotation, -40.0f, 40.0f);
     }
 }
