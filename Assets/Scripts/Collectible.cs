@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Collectible : MonoBehaviour
 {
-    public string[] dialogue; 
+    public Dialogue dialogue; 
     public DialogueManager dm;
 
     private void Start()
