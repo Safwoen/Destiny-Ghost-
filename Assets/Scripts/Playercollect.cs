@@ -18,6 +18,8 @@ public class Playercollect : MonoBehaviour
         
     }
 
+   
+
     private void OnGUI()
     {
 
