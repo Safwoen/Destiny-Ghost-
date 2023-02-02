@@ -10,6 +10,8 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     public GameObject dialogueBox;
 
+    public Animator animator;
+
     private Queue<string> sentences;
 
     void Start()
@@ -19,8 +21,17 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(false);
     }
 
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            DisplayNextSentence();
+        }
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
+        animator.SetBool("IsOpen", true);
         dialogueBox.SetActive(true);
         nameText.text = dialogue.name;
 
@@ -48,7 +59,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        Debug.Log("End of conversation.");
+        animator.SetBool("IsOpen", false);
     }
 }
 
