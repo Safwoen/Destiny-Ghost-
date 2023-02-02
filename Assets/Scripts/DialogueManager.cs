@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
 {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
+    public GameObject dialogueBox;
 
     private Queue<string> sentences;
 
@@ -15,11 +16,12 @@ public class DialogueManager : MonoBehaviour
     {
 
         sentences = new Queue<string>();
+        dialogueBox.SetActive(false);
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-
+        dialogueBox.SetActive(true);
         nameText.text = dialogue.name;
 
         sentences.Clear();
