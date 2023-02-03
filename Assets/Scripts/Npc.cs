@@ -17,7 +17,7 @@ public class Npc : MonoBehaviour
 
   void Update()
   {
-   theAgent.SetDestination(theDestination.transform.position);
+    theAgent.SetDestination(theDestination.transform.position);
   }
 
 } 

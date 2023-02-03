@@ -18,7 +18,6 @@ public class DialogueManager : MonoBehaviour
     {
 
         sentences = new Queue<string>();
-        dialogueBox.SetActive(false);
     }
 
     private void Update()
@@ -32,7 +31,6 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         animator.SetBool("IsOpen", true);
-        dialogueBox.SetActive(true);
         nameText.text = dialogue.name;
 
         sentences.Clear();
@@ -41,6 +39,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
+
 
         DisplayNextSentence();
 
@@ -54,7 +53,18 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(0.05f);
+        }
     }
 
     void EndDialogue()
