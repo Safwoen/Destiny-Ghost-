@@ -3808,7 +3808,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: 8.565918, y: -282.46997}
+=======
   m_AnchoredPosition: {x: 8.565979, y: -282.47003}
+>>>>>>> parent of b3c532a (sound)
   m_SizeDelta: {x: -185.9174, y: -592.615}
   m_Pivot: {x: 0.4860576, y: 0.5}
 --- !u!114 &1086315297
