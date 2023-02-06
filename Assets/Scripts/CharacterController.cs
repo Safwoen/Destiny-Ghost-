@@ -9,6 +9,7 @@ public class CharacterController : MonoBehaviour
     float camRotation = 0.0f;
     GameObject cam;
     Rigidbody myRigidbody;
+    public int points = 0;
 
     bool isOnGround;
     public GameObject groundChecker;
@@ -57,4 +58,19 @@ public class CharacterController : MonoBehaviour
 
         camRotation = Mathf.Clamp(camRotation, -40.0f, 40.0f);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Collectible")
+        {
+            points++;
+        }
+    }
+
+    private void OnGUI()
+    {
+
+        GUI.Label(new Rect(20, 20, 200, 40), "Score:" + points);
+    }
+
 }

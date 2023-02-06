@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Npc : MonoBehaviour
 {
+
    public GameObject theDestination;
    NavMeshAgent theAgent;
    
