@@ -8,6 +8,7 @@ public class Npcpath : MonoBehaviour
     public Transform path2;
     public Transform path3;
     public Transform path4;
+    public Transform path5;
     public Transform npc;
     
     public int pathPoint;
@@ -35,7 +36,11 @@ public class Npcpath : MonoBehaviour
         }
         if (pathPoint == 4)
         {
-            pathPoint = pathPoint - 5;
+            npc.position = Vector3.MoveTowards(npc.position, path5.position, speed);
+        }
+        if (pathPoint == 5)
+        {
+            pathPoint = pathPoint - 4;
         }
 
     }
