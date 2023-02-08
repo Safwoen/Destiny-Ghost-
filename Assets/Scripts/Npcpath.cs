@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Npcpath : MonoBehaviour
 {
-    public Transform path1;
-    public Transform path2;
-    public Transform path3;
-    public Transform path4;
-    public Transform path5;
     public Transform npc;
+
+    public Transform[] path;
     
     public int pathPoint;
     public float speed;
@@ -18,31 +15,10 @@ public class Npcpath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(pathPoint == 0)
-        {
-            npc.position = Vector3.MoveTowards(npc.position, path1.position, speed);
-        }
-        if (pathPoint == 1)
-        {
-            npc.position = Vector3.MoveTowards(npc.position, path2.position, speed);
-        }
-        if (pathPoint == 2)
-        {
-            npc.position = Vector3.MoveTowards(npc.position, path3.position, speed);
-        }
-        if (pathPoint == 3)
-        {
-            npc.position = Vector3.MoveTowards(npc.position, path4.position, speed);
-        }
-        if (pathPoint == 4)
-        {
-            npc.position = Vector3.MoveTowards(npc.position, path5.position, speed);
-        }
-        if (pathPoint == 5)
-        {
-            pathPoint = pathPoint - 4;
-        }
+        npc.position = Vector3.MoveTowards(npc.position, path[pathPoint].position, speed);
+        Vector3 newDir = (new Vector3(path[pathPoint].position.x, 0, path[pathPoint].position.z) - new Vector3(npc.position.x, 0, npc.position.z));
 
+        transform.forward = newDir;
     }
 
     void OnTriggerEnter(Collider other)
@@ -50,6 +26,11 @@ public class Npcpath : MonoBehaviour
         if(other.tag == "Path")
         {
             pathPoint++;
+
+            if (pathPoint > 4)
+            {
+                pathPoint = 0;
+            }
         }
     }
 }
