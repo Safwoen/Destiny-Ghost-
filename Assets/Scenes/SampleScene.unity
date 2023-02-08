@@ -1466,6 +1466,10 @@ PrefabInstance:
       value: Npc
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5a1bbec550771c9428067058ae55f5a3, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a1bbec550771c9428067058ae55f5a3, type: 3}
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
@@ -2585,7 +2589,7 @@ GameObject:
   - component: {fileID: 851806600}
   - component: {fileID: 851806599}
   - component: {fileID: 851806604}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3160,13 +3164,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.011674595, y: 0.06998937, z: -0.0039669434, w: 0.9974716}
-  m_LocalPosition: {x: 1.01, y: 4.47, z: -3.71}
+  m_LocalRotation: {x: 0.004951929, y: 0.10350937, z: -0.0034629777, w: 0.9946102}
+  m_LocalPosition: {x: -0.69, y: 5.14, z: -3.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 774486352}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -1.303, y: 8.034, z: -0.547}
+  m_LocalEulerAnglesHint: {x: 0.605, y: 11.881, z: -0.336}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,6 +3317,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Name
       value: Lotus b text (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2978408094071647253, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4264,7 +4272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde5d27cc7f9df74c8cd40afc972b034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceheight: 750
+  bounceheight: 1000
 --- !u!65 &1147119419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4959,6 +4967,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Name
       value: Lotus b text (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2978408094071647253, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5847,7 +5859,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578214910}
   m_LocalRotation: {x: 0.62255126, y: 0.6571892, z: -0.2949645, w: -0.305824}
-  m_LocalPosition: {x: -31.584, y: 5.397, z: 4.404}
+  m_LocalPosition: {x: -27.58, y: 5.397, z: 1.78}
   m_LocalScale: {x: 0.7900001, y: 0.33234513, z: 0.7900003}
   m_Children:
   - {fileID: 1735021031}
@@ -5873,6 +5885,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7387462800247662570, guid: c904498da05335345919e7ba090a2c3b, type: 3}
+--- !u!65 &1584933997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584933992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010181098, y: 0.0079248175, z: 0.010022113}
+  m_Center: {x: 0.00011252215, y: -0.0010375903, z: -0.000011053379}
 --- !u!65 &1589452286
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6358,8 +6383,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735021030}
   m_LocalRotation: {x: -0.6888562, y: -0.72485834, z: 0.007157921, w: -0.002514511}
-  m_LocalPosition: {x: -0.034989964, y: 0.048982386, z: 0.04067379}
-  m_LocalScale: {x: 175.27837, y: 74.13091, z: 108.46047}
+  m_LocalPosition: {x: -0.038400546, y: 0.3153239, z: -0.0912755}
+  m_LocalScale: {x: 175.27843, y: 74.13091, z: 108.46047}
   m_Children: []
   m_Father: {fileID: 1578214915}
   m_RootOrder: 0
@@ -6555,6 +6580,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7387462800247662570, guid: c904498da05335345919e7ba090a2c3b, type: 3}
+--- !u!65 &1775842989
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775842984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0096800355, y: 0.010208605, z: 0.010022113}
+  m_Center: {x: 0.0002549399, y: 0.000104302715, z: -0.00001105338}
 --- !u!1 &1789761007
 GameObject:
   m_ObjectHideFlags: 0
@@ -7489,6 +7527,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7387462800247662570, guid: c904498da05335345919e7ba090a2c3b, type: 3}
+--- !u!65 &2004344652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004344647}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.015120082, y: 0.011349832, z: 0.01002211}
+  m_Center: {x: -0.0012399751, y: 0.00067491643, z: -0.000011053169}
 --- !u!1001 &2029069016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7518,7 +7569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.03
+      value: -1.0791177
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7526,11 +7577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.14
+      value: 28.139477
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7190905
+      value: -0.7028542
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7538,7 +7589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6949165
+      value: 0.71133393
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -7550,7 +7601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 271.95898
+      value: 269.313
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -7575,6 +7626,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Name
       value: Lotus b text
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2978408094071647253, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -7755,6 +7810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lotus b text (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2978408094071647253, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7851,6 +7910,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Name
       value: Lotus b text (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c904498da05335345919e7ba090a2c3b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2978408094071647253, guid: c904498da05335345919e7ba090a2c3b, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10264,7 +10327,7 @@ GameObject:
   - component: {fileID: 2788824075908266083}
   - component: {fileID: 3912528308198116648}
   - component: {fileID: 2406415814371132982}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rose_Avenue_block_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11522,7 +11585,8 @@ GameObject:
   - component: {fileID: 9014121394579029610}
   - component: {fileID: 3054505293700109565}
   - component: {fileID: 3527650603688486818}
-  m_Layer: 0
+  - component: {fileID: 3527650603688486819}
+  m_Layer: 6
   m_Name: Rose_Avenue_block_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11543,6 +11607,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8799709007545077208, guid: 03749961bae8ff44d857ab085da3bf19, type: 3}
+--- !u!65 &3527650603688486819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3527650603688486817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008861093, y: 0.009484815, z: 0.009697139}
+  m_Center: {x: -0.000020719699, y: 0.00008471708, z: 0.00015142615}
 --- !u!23 &3544739882364727495
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12334,7 +12411,8 @@ GameObject:
   - component: {fileID: 4402255832701342892}
   - component: {fileID: 8828321954151908479}
   - component: {fileID: 4523349011043489574}
-  m_Layer: 0
+  - component: {fileID: 4523349011043489575}
+  m_Layer: 6
   m_Name: Rose_Avenue_block_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12355,6 +12433,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -546117607372840320, guid: 03749961bae8ff44d857ab085da3bf19, type: 3}
+--- !u!65 &4523349011043489575
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4523349011043489573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008552342, y: 0.01, z: 0.010501207}
+  m_Center: {x: 0.00010099061, y: -4.954505e-10, z: -0.00025060587}
 --- !u!33 &4603669332061986516
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14211,7 +14302,8 @@ GameObject:
   - component: {fileID: 4622661423975325964}
   - component: {fileID: 7636476658235564094}
   - component: {fileID: 6433308152921805967}
-  m_Layer: 0
+  - component: {fileID: 6433308152921805968}
+  m_Layer: 6
   m_Name: Rose_Avenue_block_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14232,6 +14324,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7543456798763806752, guid: 03749961bae8ff44d857ab085da3bf19, type: 3}
+--- !u!65 &6433308152921805968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6433308152921805966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0086118, y: 0.01, z: 0.010501207}
+  m_Center: {x: 0.000106036896, y: 4.954505e-10, z: -0.00025060444}
 --- !u!23 &6456272356603636768
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16500,7 +16605,8 @@ GameObject:
   - component: {fileID: 6663047654916803143}
   - component: {fileID: 8682705550030596325}
   - component: {fileID: 8522178536593707184}
-  m_Layer: 0
+  - component: {fileID: 8522178536593707185}
+  m_Layer: 6
   m_Name: Rose_Avenue_block_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16521,6 +16627,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4133447103849270432, guid: 03749961bae8ff44d857ab085da3bf19, type: 3}
+--- !u!65 &8522178536593707185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8522178536593707183}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.008720642, y: 0.01, z: 0.0105011985}
+  m_Center: {x: -0.00012472308, y: 0, z: -0.0002506078}
 --- !u!1 &8569900093922086219
 GameObject:
   m_ObjectHideFlags: 0
