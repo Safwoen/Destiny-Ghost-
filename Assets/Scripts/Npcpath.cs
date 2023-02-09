@@ -27,9 +27,9 @@ public class Npcpath : MonoBehaviour
         {
             pathPoint++;
 
-            if (pathPoint > 4)
+            if (pathPoint >= 5)
             {
-                pathPoint = 0;
+                pathPoint = 1;
             }
         }
     }

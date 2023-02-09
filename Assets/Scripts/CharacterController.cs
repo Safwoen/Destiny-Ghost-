@@ -19,6 +19,9 @@ public class CharacterController : MonoBehaviour
     public float rotationSpeed = 2.0f;
     public float camRotationSpeed = 1.5f;
 
+    public GameObject endScreen;
+    public int collectablesCollected;
+
     //public Animator myAnim;
 
     void Start()
@@ -33,6 +36,10 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
+        if (collectablesCollected >= 6)
+        {
+            endScreen.SetActive(true);
+        }
         isOnGround = Physics.CheckSphere(groundChecker.transform.position, 0.1f, groundLayer);
         //myAnim.SetBool("isOnGround", isOnGround);
 

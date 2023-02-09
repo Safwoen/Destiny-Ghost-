@@ -15,7 +15,8 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player")) 
         {
-            dm.StartDialogue(dialogue); 
+            dm.StartDialogue(dialogue);
+            other.GetComponent<CharacterController>().collectablesCollected++;
             Destroy(gameObject); 
         }
     }
